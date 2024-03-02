@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<style>
+    table {
+        width: 50%;
+        margin: auto;
+    }
+
+    h3 {
+        text-transform: uppercase;
+    }
+</style>
+
+<form action="/Cau2/Output" method="post">
+    <table border="1">
+        <tr>
+            <td colspan="3"><h3>Tính tiền điện</h3></td>
+        </tr>
+        <tr>
+            <td><b>Họ tên chủ hộ: </b></td>
+            <td><input name="textHoTen" type="text" /></td>
+            <td><input name="chkHoUuTien" type="checkbox" /> Hộ ưu tiên</td>
+        </tr>
+        <tr>
+            <td><b>Loại điện tiêu thụ: </b></td>
+            <td colspan="2">
+                <select name="dropDownLoaiDien">
+                    <option value="Sinh Hoạt">Sinh Hoạt</option>
+                    <option value="Kinh Doanh">Kinh Doanh</option>
+                    <option value="Sản Xuất">Sản Xuất</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><b>Vào chỉ số cũ: </b></td>
+            <td colspan="2"><input name="textChiSoCu" type="text" /> KW</td>
+        </tr>
+        <tr>
+            <td><b>Vào chỉ số mới: </b></td>
+            <td colspan="2"><input name="textChiSoMoi" type="text" /> KW</td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <input type="submit" value="Tính" />
+            </td>
+        </tr>
+    </table>
+</form>

@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>String and Dictionary</h2>
+@{
+    string[] teamMembers = { "mat", "john", "rober", "nancy" };
+    <p>
+        The number of name in the teamMembers array: @teamMembers.Length
+    </p>
+    <p>
+        Robe is now in position: @Array.IndexOf(teamMembers, "rober")
+    </p>
+    <p>
+        The array item at posistion 2 is @teamMembers[2]
+    </p>
+    <h3>Current order of team members is teh list</h3>
+    foreach (var item in teamMembers)
+    {
+        <p>@item</p>
+    }
+}
+<h2>Dictionary Demo</h2>
+@{
+    var myScores = new Dictionary<string, int>();
+    myScores.Add("test1", 71);
+    myScores.Add("test2", 81);
+    myScores.Add("test3", 91);
+    myScores.Add("test4", 61);
+}
+<p>
+    My score on test3 is: @myScores["test3"]%
+</p>
+@{myScores["test4"] = 79;
+}
+<p>
+    My score on test4 is: @myScores["test4"]%
+</p>

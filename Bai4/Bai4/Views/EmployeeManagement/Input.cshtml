@@ -1,0 +1,32 @@
+﻿@model Bai4.Models.Employee
+@{
+    ViewBag.Title = "Input";
+}
+
+<h2>Input Employee information</h2>
+@using (Html.BeginForm("CalSalaryV3", "EmployeeManagement"))
+{<table>
+    <tr>
+        <td>id</td>
+        <td>@Html.TextBoxFor(m => m.id)</td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td>@Html.TextBoxFor(m => m.name)</td>
+    </tr>
+    <tr>
+        <td>amount</td>
+        <td>@Html.TextBoxFor(m => m.amount)</td>
+    </tr>
+    <tr>
+        <td>salary</td>
+        <td>@Html.TextBoxFor(m => m.salary)</td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <input type="submit" value="Send" name="sb"/>
+        </td>
+    </tr>
+</table>
+}
+

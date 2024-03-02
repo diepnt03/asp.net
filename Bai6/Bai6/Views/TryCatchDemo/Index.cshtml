@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@{
+    var dataFilePath = "~/dataFile.txt";
+    var fileContent = "";
+    var physicalPath = Server.MapPath(dataFilePath);
+    var userMassage = "Hello world, this time is " + DateTime.Now;
+    var userErrMsg = "";
+    var errMsg = "";
+
+    if (IsPost)
+    {
+        //Khi người dùng click vào button "Open file", sẽ mở file và đọc dữ liệu
+        try
+        {
+            //lệnh này sẽ làm phát sinh ngoại lệ vì chưa có file dataFile.txt
+          // fileContent = File.ReadAllText(@"c:\dataFile.txt");
+            //tắt dòng lệnh trên để thoát khỏi ngoại lệ xảy ra
+            fileContent = File.ReadAllText(physicalPath);
+        }
+        catch (FileNotFoundException ex)
+        {
+            errMsg = ex.Message;
+            userErrMsg = " A file could not open";
+
+        }
+        catch (DirectoryNotFoundException ex)
+        {
+            errMsg = ex.Message;
+            userErrMsg = "A directory was not found";
+        }
+    }
+    else
+    {
+        // lần đầu tiên sẽ chạy lệnh bên dưới
+        File.WriteAllText(physicalPath, userMassage);
+    }
+}
+<form method="post" action="">
+    <input type="submit" name="sb" value="Open File" />
+</form>
+<p></p>
+<p>@physicalPath</p>
+<p></p>
+<p>@fileContent</p>
+<p></p>
+<p>@userErrMsg</p>

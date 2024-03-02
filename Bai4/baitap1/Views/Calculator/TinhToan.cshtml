@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "TinhToan";
+}
+
+<h2>TinhToan</h2>
+<style>
+    .table_num {
+        width: 50%;
+        margin: auto;
+    }
+</style>
+<form method="post" action="TinhToan">
+    <table border="1" class="table_num">
+        <tr>
+            <td><b>Nhập a:</b></td>
+            <td colspan="3"><input name="text_number_a" type="number" /></td>
+        </tr>
+        <tr>
+            <td><b>Nhập b:</b></td>
+            <td colspan="3"><input name="text_number_b" type="number" /></td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="phep_tinh" value="+" />Cộng</td>
+            <td><input type="radio" name="phep_tinh" value="-" />Trừ</td>
+            <td><input type="radio" name="phep_tinh" value="*" />Nhân</td>
+            <td><input type="radio" name="phep_tinh" value="/" />Chia</td>
+        </tr>
+        <tr>
+            <br/>
+            <td colspan="4"><input type="submit" value="Tính" class="btn btn-sm" /></td>
+        </tr>
+        <tr>
+            <td><b>Kết quả là:</b></td>
+            <td colspan="3"><p class="answer"><b>@ViewBag.KetQua</b></p></td>
+        </tr>
+    </table>
+</form>
+
+
+

@@ -1,0 +1,11 @@
+﻿@model IEnumerable<OnThiKTHP.Models.Phong>
+@*Hiển thị link các phòng ban trên menu*@
+@foreach (var item in Model)
+{
+    var url = "/NhanVienTheoPhong/" + item.Maphong; //gõ chính xác định tuyến
+    <a href="@url">@item.Tenphong</a>
+
+
+    @*<a href="">@item.Tenphong</a>*@
+    <label>&nbsp;|&nbsp;</label>
+}

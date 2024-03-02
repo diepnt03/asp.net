@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "HienThiDS";
+}
+<style>
+    td,tr{
+        width : 150px;
+    }
+</style>
+
+
+<h2>HienThiDS</h2>
+<h3>Nhan vien co so ngay lam < 20</h3>
+<table border="1">
+    <tr>
+        <th>Ma nhan vien</th>
+        <th>Ho ten</th>
+        <th>Dia chi</th>
+        <th>So ngay lam</th>
+        <th>Luong ngay</th>
+    </tr>
+    @foreach (var item in ViewBag.li1)
+    {
+        <tr>
+            <td>@item.manv</td>
+            <td>@item.hoten</td>
+            <td>@item.diachi</td>
+            <td>@item.songaylam</td>
+            <td>@item.luongngay</td>
+        </tr>
+    }
+</table>
+
+<h3>Nhan vien co so luong ngay > 190000</h3>
+<table border="1">
+    <tr>
+        <th>Ma nhan vien</th>
+        <th>Ho ten</th>
+        <th>Dia chi</th>
+        <th>So ngay lam</th>
+        <th>Luong ngay</th>
+    </tr>
+    @foreach (var item in ViewBag.li2)
+    {
+        <tr>
+            <td>@item.manv</td>
+            <td>@item.hoten</td>
+            <td>@item.diachi</td>
+            <td>@item.songaylam</td>
+            <td>@item.luongngay</td>
+        </tr>
+    }
+</table>
+

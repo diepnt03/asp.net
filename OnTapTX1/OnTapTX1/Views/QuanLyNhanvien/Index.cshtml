@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<form method="post" action="/QuanLyNhanvien/Display">
+    <table>
+        <tr>
+            <td>Ma nhan vien: </td>
+            <td>
+                <input type="text" name="manv" />
+            </td>
+        </tr>
+        <tr>
+            <td>Ho ten: </td>
+            <td>
+                <input type="text" name="hoten" />
+            </td>
+        </tr>
+        <tr>
+            <td>Dia chi: </td>
+            <td>
+                <select name="diachi">
+                    <option value="Ha noi">Ha Noi</option>
+                    <option value="Hai phong">Hai Phong</option>
+                    <option value="Quang ninh">Quang Ninh</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>So ngay lam: </td>
+            <td>
+                <input type="text" name="songaylam" />
+            </td>
+        </tr>
+        <tr>
+            <td>Luong ngay: </td>
+            <td>
+                <input type="text" name="luongngay" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="Gui" />
+            </td>
+        </tr>
+    </table>
+</form>
+

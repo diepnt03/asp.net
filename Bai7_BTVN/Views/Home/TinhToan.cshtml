@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "TinhToan";
+    <style>
+        form{
+            justify-content:center;
+        }
+        table{
+            width: 50%;
+            text-align: center;
+        }
+        tr{
+            height:50px;
+        }
+        input{
+            margin: 10px;
+        }
+    </style>
+}
+
+<h2>TinhToan</h2>
+<form id="main">
+    <table>
+        <tr>
+            <td>Nhập số thứ 1</td>
+            <td>
+                <input name="txta" type="text" />
+            </td>
+        </tr>
+        <tr>
+            <td>Nhập số thứ 2</td>
+            <td>
+                <input name="txtb" type="text" />
+            </td>
+        </tr>
+        <tr>
+            <td>Kết quả</td>
+            <td>
+                <input name="txt" type="text" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input name="btCong" type="submit" value="Cộng" />
+                <input name="btTru" type="submit" value="Trừ"/>
+                <input name="btNhan" type="submit" value="Nhân"/>
+                <input name="btChia" type="submit" value="Chia"/>
+            </td>
+        </tr>
+    </table>
+</form>
+

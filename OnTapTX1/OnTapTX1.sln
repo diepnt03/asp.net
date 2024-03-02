@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34301.259
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnTapTX1", "OnTapTX1\OnTapTX1.csproj", "{BF1E1560-E6B3-4834-AE9C-8F8D4E51ACD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "De2", "De2\De2.csproj", "{DB6AF1A9-BE15-4444-A6A5-6AB9A354FD45}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF1E1560-E6B3-4834-AE9C-8F8D4E51ACD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF1E1560-E6B3-4834-AE9C-8F8D4E51ACD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF1E1560-E6B3-4834-AE9C-8F8D4E51ACD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF1E1560-E6B3-4834-AE9C-8F8D4E51ACD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB6AF1A9-BE15-4444-A6A5-6AB9A354FD45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB6AF1A9-BE15-4444-A6A5-6AB9A354FD45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB6AF1A9-BE15-4444-A6A5-6AB9A354FD45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB6AF1A9-BE15-4444-A6A5-6AB9A354FD45}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4AB665A-6984-4E93-B361-D949CC8639AA}
+	EndGlobalSection
+EndGlobal

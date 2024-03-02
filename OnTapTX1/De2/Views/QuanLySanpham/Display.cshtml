@@ -1,0 +1,36 @@
+﻿@model De2.Models.Sanpham
+@{
+    ViewBag.Title = "Display";
+}
+
+<h2>Display</h2>
+<table border="2">
+    <tr>
+        <td>Ma san pham</td>
+        <td>@Model.masp</td>
+    </tr>
+    <tr>
+        <td>Ten san pham</td>
+        <td>@Model.tensanpham</td>
+    </tr>
+    <tr>
+        <td>So luong</td>
+        <td>@Model.soluong</td>
+    </tr>
+    <tr>
+        <td>Gia tien</td>
+        <td>@Model.giatien</td>
+    </tr>
+    <tr>
+        <td>Giam gia</td>
+        <td>@Model.giamgia</td>
+    </tr>
+    <tr>
+        <td>Thanh tien</td>
+        <td>@Model.thanhtien</td>
+    </tr>
+</table>
+<p>
+    @Html.ActionLink("back", "Index")
+</p>
+

@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "UploadFile";
+}
+
+<h2>UploadFile</h2>
+<form action="" method="post" enctype="multipart/form-data">
+    <p>
+        <input name="file" type="file"/>
+    </p>
+    <hr/>
+    <input type="submit" value="Upload"/>
+    @ViewBag.Message
+</form>

@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<form method="post" action="/QuanLySanpham/Display">
+    <table>
+        <tr>
+            <td>Ma sp: </td>
+            <td>
+                <input type="text" name="masp" />
+            </td>
+        </tr>
+        <tr>
+            <td>Ten sp: </td>
+            <td>
+                <input type="text" name="tensanpham" />
+            </td>
+        </tr>
+        <tr>
+            <td>So luong: </td>
+            <td>
+                <input type="text" name="soluong" />
+            </td>
+        </tr>
+        <tr>
+            <td>Gia tien: </td>
+            <td>
+                <input type="text" name="giatien" />
+            </td>
+        </tr>
+        <tr>
+            <td>Giam gia: </td>
+            <td>
+                <input type="radio" name="giamgia" value="1" />Co
+                <input type="radio" name="giamgia" value="0" />Khong
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="Gui" />
+            </td>
+        </tr>
+        
+    </table>
+</form>

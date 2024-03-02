@@ -1,0 +1,66 @@
+﻿@model OnTapTX2.Models.Trangsuc
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Trangsuc</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Danhmuc.TenDanhmuc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Danhmuc.TenDanhmuc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TenTs)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenTs)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Anh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Anh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mota)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mota)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Soluong)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Soluong)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Giatien)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Giatien)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaTs }) |
+    @Html.ActionLink("Back to List", "Xemdanhsach")
+</p>

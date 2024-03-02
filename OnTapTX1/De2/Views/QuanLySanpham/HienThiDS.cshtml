@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "HienThiDS";
+}
+<style>
+    th, td{
+        width: 150px;
+        padding: 10px;
+    }
+</style>
+
+<h2>các sản phẩm có giá tiền >100</h2>
+<table border="2">
+    <tr>
+        <th>Mã sản phẩm</th>
+        <th>Tên sản phẩm</th>
+        <th>Số lượng</th>
+        <th>Giá tiền</th>
+        <th>Giảm giá</th>
+    </tr>
+    @foreach (var item in ViewBag.li1)
+    {
+        <tr>
+            <td>@item.masp</td>
+            <td>@item.tensanpham</td>
+            <td>@item.soluong</td>
+            <td>@item.giatien</td>
+            <td>@item.giamgia</td>
+        </tr>
+    }
+</table>
+
+<h2>các sản phẩm giảm giá</h2>
+<table border="2">
+    <tr>
+        <th>Mã sản phẩm</th>
+        <th>Tên sản phẩm</th>
+        <th>Số lượng</th>
+        <th>Giá tiền</th>
+        <th>Giảm giá</th>
+    </tr>
+    @foreach (var item in ViewBag.li2)
+    {
+        <tr>
+            <td>@item.masp</td>
+            <td>@item.tensanpham</td>
+            <td>@item.soluong</td>
+            <td>@item.giatien</td>
+            <td>@item.giamgia</td>
+        </tr>
+    }
+</table>
+

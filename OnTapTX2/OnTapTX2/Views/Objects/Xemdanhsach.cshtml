@@ -1,0 +1,77 @@
+﻿@model IEnumerable<OnTapTX2.Models.Trangsuc>
+
+@{
+    ViewBag.Title = "Xemdanhsach";
+}
+
+<h2>Xemdanhsach</h2>
+<p>
+    @Html.ActionLink("Create New", "ThemDuLieu")
+</p>
+@using (Html.BeginForm())
+{
+    <p>
+        Tìm kiếm trang sức có giá tiền lớn hơn:
+        @Html.TextBox("SearchString")
+        <input type="submit" value="Tìm" />
+    </p>
+}
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Danhmuc.TenDanhmuc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TenTs)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Anh)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mota)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Soluong)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Giatien)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Danhmuc.TenDanhmuc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenTs)
+            </td>
+            <td>
+                @{
+                    var path = "~/Content/Images/" + item.Anh;
+                    <img src="@Url.Content(path)" width="150px" />
+                }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Mota)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Soluong)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Giatien)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Suadulieu", new { id = item.MaTs }) |
+                @Html.ActionLink("Details", "Details", new { id = item.MaTs }) |
+                @Html.ActionLink("Delete", "XoaDuLieu", new { id = item.MaTs })
+            </td>
+        </tr>
+    }
+
+</table>
+
+
